@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+.employee-list {
+  font-size: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.employee {
+
+  span {
+    display: inline-block;
+    border: 1px dashed black;
+    border-radius: 5px;
+    min-width: 100px;
+    padding: 5px 10px;
+    margin:5px;
+  }
+
+  span:nth-child(2) {
+    min-width: 250px;
+  }
+}
