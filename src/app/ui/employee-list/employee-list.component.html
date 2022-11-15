@@ -1,8 +1,8 @@
 <h1>Employee list</h1>
 <ul [className]="'employee-list'" *ngIf="data$ | async as data; else empty">
   <li [className]="'employee'" *ngFor="let employee of data">
-    <span>{{ employee.id }}: {{ employee.name }}</span>
-    <span>Email: {{employee.email}}</span>
+    <span>{{ employee.personalNumber }}: {{ employee.name }}</span>
+    <span>Email: {{employee.mail}}</span>
   </li>
 </ul>
 
