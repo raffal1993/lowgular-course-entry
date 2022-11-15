@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "John",
+    "email": "john@lowgular.io",
+    "image": "assets/data/employees/john.jpeg"
+  },
+  {
+    "id": "2",
+    "name": "Pawel",
+    "email": "pawel@lowgular.io",
+    "image": "assets/data/employees/pawel.jpeg"
+  },
+  {
+    "id": "3",
+    "name": "Anna",
+    "email": "anna@lowgular.io",
+    "image": "assets/data/employees/anna.jpeg"
+  }
+]
