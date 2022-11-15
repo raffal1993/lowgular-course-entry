@@ -1,0 +1,31 @@
+.project-list{
+padding: 10px 20px;
+  border: 1px solid lightcoral;
+  border-radius: 10px;
+  max-width: 60%;
+}
+
+.project{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+
+}
+
+.name{
+  font-size:30px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Georgia", sans-serif;
+}
+
+.desc{
+  font-style: italic;
+}
+
+.owner{
+  font-weight: 600;
+}

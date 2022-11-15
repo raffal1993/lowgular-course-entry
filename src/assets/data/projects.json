@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "Employee Web",
+    "owner": "John",
+    "description": "Application for Employee and projects management"
+  },
+  {
+    "id": "2",
+    "name": "Best Ecommerce",
+    "owner": "Anna",
+    "description": "The best Online shop"
+  },
+  {
+    "id": "3",
+    "name": "Central Auth",
+    "owner": "Anna",
+    "description": "Core Application for authorization process"
+  }
+]
