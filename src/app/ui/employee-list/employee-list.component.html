@@ -3,7 +3,8 @@
   <li [className]="'employee'" *ngFor="let employee of data">
     <span>{{ employee.personalNumber }}: {{ employee.name }}</span>
     <span>Email: {{employee.mail}}</span>
+    <button (click)="remove(employee.personalNumber)">Remove me</button>
   </li>
 </ul>
 
-<ng-template #empty> There is no data </ng-template>
+<ng-template #empty> There is no data</ng-template>
