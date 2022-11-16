@@ -1,0 +1,9 @@
+<nav [className]="'navbar'">
+  <form [formGroup]="employeeForm" (ngSubmit)="createEmployee(employeeForm.value)">
+    <p>Add new employee: </p>
+    <input [className]="'name'" type="text" formControlName="name" placeholder="name">
+    <input [className]="'email'" type="email" formControlName="mail" placeholder="email">
+    <input [className]="'salary'" type="number" formControlName="salary" placeholder="salary">
+    <input [className]="'submit'" type="submit" value="Submit" [disabled]="employeeForm.invalid">
+  </form>
+</nav>

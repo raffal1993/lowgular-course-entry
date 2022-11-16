@@ -1,0 +1,60 @@
+.container {
+  padding: 10px;
+  min-height: 100vh;
+  font-family: "Calibri Light", sans-serif;
+  font-size: 20px;
+}
+
+.title {
+  text-align: center;
+  height: 70px;
+}
+
+.employee {
+  padding: 5px;
+  margin: 5px;
+  background-color: lightsteelblue;
+  border-radius: 10px;
+}
+
+.employee:hover {
+  background-color: lightslategrey;
+  cursor: pointer;
+}
+
+.employee_number {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px 0;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.employee_name {
+  display: inline-block;
+  border-right: 2px solid black;
+  padding: 0 10px;
+  min-width: 250px;
+}
+
+.employee_email {
+  display: inline-block;
+  margin-left: 5px;
+  width: 300px;
+}
+
+.employee_remove {
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 5px;
+}
+
+.employee_remove:hover {
+  background-color: white;
+}
