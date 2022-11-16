@@ -1,4 +1,4 @@
-<form [formGroup]="employeeForm" (ngSubmit)="onButtonClick(employeeForm.value)">
+<form [formGroup]="employeeForm" (ngSubmit)="onFormSubmit(employeeForm.value)">
   <input type="text" formControlName="name" placeholder="name">
   <input type="number" formControlName="age" placeholder="age">
   <input type="number" formControlName="salary" placeholder="salary">
