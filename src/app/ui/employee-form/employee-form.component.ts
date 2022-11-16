@@ -1,8 +1,8 @@
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { EmployeeService } from '../../services/employee.service';
-import { ProjectsService } from '../../services/projects.service';
-import { CreateEmployeeModel } from '../../model/create-employee.model';
+import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {EmployeeService} from '../../services/employee.service';
+import {ProjectsService} from '../../services/projects.service';
+import {CreateEmployeeModel} from '../../model/create-employee.model';
 
 @Component({
   selector: 'app-employee-form',
@@ -12,7 +12,8 @@ import { CreateEmployeeModel } from '../../model/create-employee.model';
 })
 export class EmployeeFormComponent {
 
-  constructor(private _employeeService: EmployeeService, private _projectsService: ProjectsService) { }
+  constructor(private _employeeService: EmployeeService, private _projectsService: ProjectsService) {
+  }
 
   readonly employeeForm: FormGroup = new FormGroup(
     {
@@ -23,7 +24,6 @@ export class EmployeeFormComponent {
       salary: new FormControl(null,
         [Validators.required, Validators.min(0)])
     });
-
 
 
   onButtonClick(formValues: { name: string, age: number, salary: number }) {
