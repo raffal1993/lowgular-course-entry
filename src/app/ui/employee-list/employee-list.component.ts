@@ -14,6 +14,7 @@ export class EmployeeListComponent {
   }
 
   data$: Observable<PersonModel[] | null> = this._employeeService.getAll()
+  dataAPI$: Observable<PersonModel[] | null> = this._employeeService.getAllFromDummyAPI()
 
   remove(id: string) {
     this._employeeService.delete(id).subscribe()
