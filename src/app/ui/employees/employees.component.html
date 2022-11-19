@@ -1,10 +1,13 @@
-<main [className]="'container'" *ngIf="data$ | async as data">
-  <h1 [className]="'title'">Employee list:</h1>
-  <div [className]="'employee'" *ngFor="let employee of data">
-    <span [className]="'employee_number'">{{employee["personalNumber"]}}</span>
-    <span [className]="'employee_name'">{{employee["name"]}}</span>
-    <span [className]="'employee_email'">{{employee["mail"]}}</span>
-    <button (click)="delete(employee['personalNumber'])" [className]="'employee_remove'">X</button>
-  </div>
+<main [className]="''" *ngIf="data$ | async as data">
+  <h1 [className]="'fs-2 fw-bold font-monospace my-4 mx-4'">Employee list:</h1>
+  <ul [className]="'list-group mx-4'" *ngFor="let employee of data">
+    <li [className]="'list-group-item my-1 d-flex align-items-center'">
+      <span [className]="'d-inline me-3'" [style]="'width:22px'">{{employee["personalNumber"]}}. </span>
+      <span [className]="'d-inline fw-bold w-25'">{{employee["name"]}}</span>
+      <span [className]="' w-25 mx-5 fs-6 fw-semibold fst-italic'">{{employee["mail"]}}</span>
+      <button (click)="delete(employee['personalNumber'])" [className]="'btn btn-danger'">X</button>
+    </li>
+
+  </ul>
 </main>
 
