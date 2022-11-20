@@ -1,9 +1,10 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {ApiResponse} from "./api.response";
-import {EmployeesAPIModel} from "../model/employeesAPI.model";
-import {map, Observable} from "rxjs";
-import {EmployeesModel} from "../model/employees.model";
+import {Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
+import {EmployeesModel} from '../model/employees.model';
+import {ApiResponse} from './api.response';
+import {EmployeesAPIModel} from '../model/employeesAPI.model';
 
 const URL_ALL_EMPLOYEES = "https://dummy.restapiexample.com/api/v1/employees"
 const URL_DELETE_EMPLOYEE = "https://dummy.restapiexample.com/api/v1/delete/"
@@ -38,5 +39,13 @@ export class EmployeeService {
     return this._httpClient.post(URL_CREATE_EMPLOYEE, employee).pipe(map(_ => void 0))
   }
 
-
+  getOne(id: string): Observable<EmployeesModel> {
+    return this._httpClient.get<ApiResponse<EmployeesAPIModel>>(`https://dummy.restapiexample.com/api/v1/employee/${id}`)
+      .pipe(map((employee): EmployeesModel => ({
+        id: employee.data.id,
+        img: employee.data.profile_image,
+        mail: "",
+        name: employee.data.employee_name,
+      })))
+  }
 }
