@@ -1,0 +1,17 @@
+
+.active {
+  background-color: cornflowerblue;
+  color: black !important;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.nav-item {
+  border-bottom: 1px solid transparent;
+}
+
+.nav-item:hover:not(.active) {
+  border-bottom: 1px solid black;
+}
+
+

@@ -7,6 +7,8 @@ import {EmployeesComponentModule} from "./ui/employees/employees.component-modul
 import {EmployeeServiceModule} from "./services/employee.service-module";
 import {NewEmployeeComponentModule} from "./ui/new-employee/new-employee.component-module";
 import {RouterModule} from "@angular/router";
+import {NavbarComponentModule} from "./ui/navbar/navbar.component-module";
+import {FooterComponentModule} from "./ui/footer/footer.component-module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +20,8 @@ import {RouterModule} from "@angular/router";
     EmployeesComponentModule,
     EmployeeServiceModule,
     NewEmployeeComponentModule,
+    NavbarComponentModule,
+    FooterComponentModule,
 
   ],
   providers: [],

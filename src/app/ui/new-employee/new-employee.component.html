@@ -1,12 +1,10 @@
-<nav [className]="'navbar navbar-expand-md bg-dark sticky-top'">
-  <div [className]="'container-fluid  justify-content-center text-light'">
-    <form [className]="'d-flex justify-content-evenly align-items-center w-100 p-2'" [formGroup]="employeeForm"
-          (ngSubmit)="createEmployee(employeeForm.value)">
-      <p [className]="'w-25 text-center fs-5 fw-semibold my-auto'">Add new employee: </p>
-      <input [className]="'form-control w-25 mx-2'" type="text" formControlName="name" placeholder="name">
-      <input [className]="'form-control w-25 mx-2'" type="email" formControlName="mail" placeholder="email">
-      <input [className]="'form-control w-25 mx-2'" type="number" formControlName="salary" placeholder="salary">
-      <input [className]="'btn btn-primary'" type="submit" value="Submit" [disabled]="employeeForm.invalid">
-    </form>
-  </div>
-</nav>
+<div [className]="'d-flex justify-content-center text-light bg-dark p-4'">
+  <form [className]="'d-flex justify-content-evenly align-items-center w-75 '" [formGroup]="employeeForm"
+        (ngSubmit)="createEmployee(employeeForm.value)">
+    <p [className]="'w-25 text-center fs-5 fw-semibold my-auto'">Add new employee: </p>
+    <input [className]="'form-control w-25 mx-4'" type="text" formControlName="name" placeholder="name">
+    <input [className]="'form-control w-25 mx-4'" type="email" formControlName="mail" placeholder="email">
+    <input [className]="'form-control w-25 mx-4'" type="number" formControlName="salary" placeholder="salary">
+    <input [className]="'btn btn-primary'" type="submit" value="Submit" [disabled]="employeeForm.invalid">
+  </form>
+</div>

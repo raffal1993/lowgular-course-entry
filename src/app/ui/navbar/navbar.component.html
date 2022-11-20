@@ -1,0 +1,10 @@
+<nav class="navbar bg-primary mb-5 ps-5 justify-content-start gap-5">
+  <a [routerLink]="'/'" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}"
+     [className]="'navbar-brand nav-item text-light py-1 px-4'">Homepage</a>
+  <a [routerLink]="'/employee-list'" [routerLinkActive]="['active']"
+     [className]="'navbar-brand nav-item text-light fs-6 py-1 px-4'">Employee list</a>
+  <a [routerLink]="'/create-employee'" [routerLinkActive]="['active']"
+     [className]="'navbar-brand nav-item text-light fs-6 py-1 px-4'">Create new
+    Employee</a>
+</nav>
+
