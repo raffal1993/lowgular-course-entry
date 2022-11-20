@@ -3,7 +3,10 @@
   <ul [className]="'list-group mx-4'" *ngFor="let employee of data">
     <li [className]="'list-group-item my-1 d-flex align-items-center'">
       <span [className]="'d-inline me-3'" [style]="'width:22px'">{{employee["personalNumber"]}}. </span>
-      <span [className]="'d-inline fw-bold w-25'">{{employee["name"]}}</span>
+      <a [routerLink]="'/employee-details/' + employee['personalNumber'] + '/' +  employee['name']"
+         [className]="'d-inline fw-bold w-25'">
+        <span>{{employee["name"]}}</span>
+      </a>
       <span [className]="' w-25 mx-5 fs-6 fw-semibold fst-italic'">{{employee["mail"]}}</span>
       <button (click)="delete(employee['personalNumber'])" [className]="'btn btn-danger'">X</button>
     </li>
